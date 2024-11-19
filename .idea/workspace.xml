@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e12e70c-2d2c-4ef5-9617-b6109ebb6796" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bakcend/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bakcend/library.provider.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bakcend/typedorm.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/vpc-stack/vpc-stack.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bakcend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/bakcend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bakcend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/bakcend/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bakcend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/bakcend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/endeavorai.com.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bin/endeavorai.com.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/endeavorai.com-stack.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +118,7 @@
       <workItem from="1731959151272" duration="259000" />
       <workItem from="1731959411372" duration="3042000" />
       <workItem from="1731963000761" duration="717000" />
-      <workItem from="1732024795540" duration="761000" />
+      <workItem from="1732024795540" duration="1166000" />
     </task>
     <servers />
   </component>
