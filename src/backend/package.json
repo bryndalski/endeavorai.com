@@ -35,6 +35,7 @@
     "@typedorm/common": "^1.15.4",
     "@typedorm/core": "^1.15.4",
     "@typedorm/document-client": "^1.15.4",
+    "class-validator": "^0.14.1",
     "graphql": "^16.9.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0",

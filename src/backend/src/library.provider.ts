@@ -21,49 +21,6 @@ export const libraryProvider: DynamicModule[] = [
       sortSchema: true,
       uploads: false,
       driver: ApolloDriver,
-
-      subscriptions: {
-        // eslint-disable-next-line @typescript-eslint/naming-convention
-        "graphql-ws": {
-          path: "/subscriptions",
-          onConnect: (context) => {
-            if (context && context.connectionParams) {
-              const { authorization, Authorization } = context.connectionParams;
-              const headers = {
-                authorization: authorization || Authorization,
-              };
-              return { req: { headers } };
-            } else {
-              return { req: {} }; // Provide default headers or handle the absence of connectionParams
-            }
-          },
-        },
-        // eslint-disable-next-line @typescript-eslint/naming-convention
-        "subscriptions-transport-ws": {
-          path: "/subscriptions",
-          onConnect: (connectionParams) => {
-            if (connectionParams) {
-              const { authorization, Authorization } = connectionParams;
-              const headers = {
-                authorization: authorization || Authorization,
-              };
-              return { req: { headers } };
-            }
-          },
-        },
-      },
-
-      context: (request) => {
-        return request.subscriptions
-          ? {
-              req: {
-                headers: {
-                  ...(request.connectionParams || {}),
-                },
-              },
-            }
-          : { req: request.req };
-      },
     }),
 
     inject: [ConfigService],

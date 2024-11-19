@@ -5,11 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e12e70c-2d2c-4ef5-9617-b6109ebb6796" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/vpc-stack/vpc-stack.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/backend-stack/backend-stack.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/bucket-stack/bucket-stack.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dynamodb-stack/dynamodb-stack.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/endeavorai.com.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bin/endeavorai.com.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/endeavorai.com-stack.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/library.provider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/src/library.provider.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/nest-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/nest-cli.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/src/health/health.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/src/health/health.controller.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/src/health/health.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/src/health/health.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/src/health/health.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/src/health/health.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/test/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/test/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/test/jest-e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/test/jest-e2e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/tsconfig.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/tsconfig.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/typedorm.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/src/typedorm.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/yarn-error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bakcend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,34 +66,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "code.cleanup.on.save": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/bryndalski/kodowanie/endeavorai.com",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.lint:fix.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "/Users/bryndalski/kodowanie/endeavorai.com/node_modules/prettier",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/bryndalski/kodowanie/endeavorai.com/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bryndalski/kodowanie/endeavorai.com&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.lint:fix.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/bryndalski/kodowanie/endeavorai.com/node_modules/prettier&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/bryndalski/kodowanie/endeavorai.com/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/backend/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -118,12 +136,15 @@
       <workItem from="1731959151272" duration="259000" />
       <workItem from="1731959411372" duration="3042000" />
       <workItem from="1731963000761" duration="717000" />
-      <workItem from="1732024795540" duration="1166000" />
+      <workItem from="1732024795540" duration="4532000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="nest-cli.json" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
