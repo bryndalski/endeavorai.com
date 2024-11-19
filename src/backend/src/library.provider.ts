@@ -7,17 +7,17 @@ import { GraphQLModule } from "@nestjs/graphql";
 import { TypeDormModule } from "@nest-dynamodb/typedorm";
 import { DocumentClientV3 } from "@typedorm/document-client";
 import { join } from "path";
-import { DynamicModule } from "@nestjs/common";
 import { dynamoDbPoTable } from "./typedorm.config";
+import { PaymentOrderEntity } from "./payment-order/entity/payment-order.entity";
 
-export const libraryProvider: DynamicModule[] = [
+export const libraryProvider = [
   GraphQLModule.forRootAsync<ApolloDriverConfig>({
     driver: ApolloDriver,
     imports: [ConfigModule],
     useFactory: (configService: ConfigService) => ({
       autoSchemaFile: join(__dirname, "schema.gql"),
-      playground: configService.get("ENABLED_PLAYGROUND"),
-      introspection: configService.get("ENABLED_PLAYGROUND"),
+      playground: true,
+      introspection: true,
       sortSchema: true,
       uploads: false,
       driver: ApolloDriver,
@@ -30,11 +30,11 @@ export const libraryProvider: DynamicModule[] = [
     inject: [ConfigService],
     useFactory: (configService: ConfigService) => ({
       table: dynamoDbPoTable,
-      entities: [],
+      entities: [PaymentOrderEntity],
       documentClient: new DocumentClientV3(
         new DynamoDBClient({
           credentials: fromContainerMetadata(),
-          region: "eu-west-1",
+          region: "eu-central-1",
         })
       ),
     }),
