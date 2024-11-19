@@ -20,12 +20,25 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.666.0",
+    "@aws-sdk/client-s3": "^3.666.0",
+    "@aws-sdk/credential-providers": "^3.693.0",
+    "@aws-sdk/s3-request-presigner": "^3.666.0",
+    "@nest-dynamodb/typedorm": "^1.1.0",
+    "@nestjs/apollo": "^12.2.0",
     "@nestjs/common": "^9.0.0",
+    "@nestjs/config": "^3.3.0",
     "@nestjs/core": "^9.0.0",
+    "@nestjs/graphql": "^12.2.1",
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/terminus": "^10.2.3",
+    "@typedorm/common": "^1.15.4",
+    "@typedorm/core": "^1.15.4",
+    "@typedorm/document-client": "^1.15.4",
+    "graphql": "^16.9.0",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
